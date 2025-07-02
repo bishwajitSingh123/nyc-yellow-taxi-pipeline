@@ -23,6 +23,12 @@ End‑to‑end data pipeline using **Azure Data Factory, ADLS Gen2, Databricks (
 | `notebooks/` | Databricks notebooks for each pipeline stage |
 | `scripts/`   | Schema file + external‑table SQL             |
 
+## 🧪 Notebooks
+
+- [Silver Layer Notebook](notebooks/silver.ipynb)
+- [Gold Layer Notebook](notebooks/gold.ipynb)
+
+
 ## ✨ Output Table
 - **Table:** `gold.trip_zone`
 - **Format:** Delta Lake  
