@@ -36,6 +36,13 @@ It processes NYC Yellow Taxi data through Bronze → Silver → Gold layers usin
 
 ---
 
+## 📊 Output Tables
+
+- silver.trip_data
+- gold.trip_zone
+
+---
+
 ## 🧠 Learnings
 - Data lake architecture (Bronze → Silver → Gold)
 - PySpark transformations
@@ -44,13 +51,13 @@ It processes NYC Yellow Taxi data through Bronze → Silver → Gold layers usin
 
 ---
 
-## 🙏 Author
+## 🙋 Author
 
-**Bishwajit Singh**  
+**👨‍💻 Bishwajit Singh**   
 Aspiring Data Engineer | Azure + Spark Enthusiast  
 [GitHub](https://github.com/bishwajitSingh123) | [LinkedIn](https://www.linkedin.com/in/bishwajitSingh123)
 
 ---
 
-## 📌 License
+## 📜 License
 This project is licensed under the [MIT License](LICENSE).
