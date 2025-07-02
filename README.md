@@ -1,43 +1,56 @@
-# NYC Yellow Taxi – Azure Data Engineering Pipeline 🚖
+# 🚖 NYC Yellow Taxi Trip Data Pipeline (Azure + Databricks)
 
-## 📌 Description
-End‑to‑end data pipeline using **Azure Data Factory, ADLS Gen2, Databricks (PySpark), and Delta Lake** to process and analyze NYC Yellow Taxi trip data.
+This project demonstrates a complete data engineering pipeline using Azure Data Lake Storage and Databricks.  
+It processes NYC Yellow Taxi data through Bronze → Silver → Gold layers using Delta Lake.
 
-## ✅ Pipeline Stages
-| Stage  | Description                             |
-|--------|-----------------------------------------|
-| Bronze | Raw Parquet data ingested to ADLS       |
-| Silver | PySpark transformation & cleaning       |
-| Gold   | Stored in Delta format with external table |
+---
 
-## 📊 Technologies Used
+## 🛠️ Tools & Tech Used
+- Azure Data Lake Storage (Gen2)
 - Azure Data Factory
-- Azure Data Lake Storage Gen2
 - Azure Databricks (PySpark)
 - Delta Lake
-- Hive Metastore
+- GitHub
 
-## 📂 Folder Details
-| Folder       | Purpose                                      |
-|--------------|----------------------------------------------|
-| `notebooks/` | Databricks notebooks for each pipeline stage |
-| `scripts/`   | Schema file + external‑table SQL             |
+---
 
-## 🧪 Notebooks
+## 📂 Data Lakehouse Structure
 
-- [Silver Layer Notebook](notebooks/silver.ipynb)
-- [Gold Layer Notebook](notebooks/gold.ipynb)
+- **Bronze**: Raw ingested data (from ADF)
+- **Silver**: Cleaned + transformed data (with schema applied)
+- **Gold**: Aggregated/report-ready data
 
+---
 
-## ✨ Output Table
-- **Table:** `gold.trip_zone`
-- **Format:** Delta Lake  
-- **Mode:** External table (ADLS path)
+## 📒 Notebooks
 
-## 🧑‍💻 Author
-**Bishwajit Singh**  
-_Data Engineer | Azure & Databricks Enthusiast_  
-[LinkedIn](www.linkedin.com/in/bishwajitsingh) • [GitHub](https://github.com/bishwajitSingh123)
+- [🔹 Silver Layer](notebooks/silver.ipynb)
+- [🥇 Gold Layer](notebooks/gold.ipynb)
 
-## 📄 License
-MIT License
+---
+
+## 📊 Sample Transformations in Gold
+- Total fare per payment type
+- Avg trip distance by pickup zone
+- Tip % analysis
+
+---
+
+## 🧠 Learnings
+- Data lake architecture (Bronze → Silver → Gold)
+- PySpark transformations
+- Managing large-scale data with Delta Lake
+- Working with Azure cloud components end-to-end
+
+---
+
+## 🙏 Author
+
+**Bishwajit Singh**  
+Aspiring Data Engineer | Azure + Spark Enthusiast  
+[GitHub](https://github.com/bishwajitSingh123) | [LinkedIn](https://www.linkedin.com/in/bishwajitSingh123)
+
+---
+
+## 📌 License
+This project is licensed under the [MIT License](LICENSE).
